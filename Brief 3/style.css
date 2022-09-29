@@ -1,0 +1,108 @@
+
+.na1 .na11{
+    display: flex;
+    align-items: center;
+}
+.na1 .na11 li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+}
+ul{
+    display: flex;
+}
+#logo{
+    font-family:'Trebuchet MS';
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    width: min-content;
+}
+.na2{
+    margin-left: -36px;
+}
+.na2 ol{
+    display: flex;
+}
+.na2 ol li{
+    list-style: none;
+    margin: 10px 30px 10px 0px;
+}
+
+main h1{
+    
+    font-family: Verdana, Tahoma;
+}
+#PA{
+    font-family: Verdana, Tahoma;
+    width:50%;
+}
+a{
+    text-decoration: none;
+    
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+  }
+section{
+    display: inline-flex;
+    margin-right: 395px;
+    justify-content: space-between;
+}
+.div1,.div2{
+    display: inline-flex;
+}
+img{
+    width:92%;
+    height:250px;
+    padding: 7px;
+}
+.div1 div,.div2 div{
+    border: 1.5px solid black;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div p, div h4{
+    font-family: Tahoma;
+    margin-left: 7px;
+}
+@media screen and (max-width:500px){
+    .na1 .na11{
+        display:block;
+        margin-left:-35px;
+    }
+    .na1 .na11 li{
+        font-size:11px;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: 10px 30px;
+        margin: 0;
+        }
+    #logo{
+       margin-left:43%;
+    }
+    #PA{
+        font-family: Verdana, Tahoma;
+        width:100%;
+    }
+    section{
+        display: block;
+    }
+    .div1,.div2{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .div1 div,.div2 div{
+        width: 350%;
+        margin: 10px;
+        margin-left: 70%;
+    }
+    img{
+        width:95%;
+        height: 400px;
+    }
+
+}
