@@ -30,6 +30,7 @@ h1{
 #PA{
     margin-left: 40px;
     font-family: Verdana, Tahoma;
+    width: 80%;
 }
 a{
     text-decoration: none;
@@ -59,4 +60,12 @@ section div{
 div p, div h4{
     font-family: Tahoma;
     margin-left: 7px;
+}
+footer{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    font-family:'Trebuchet MS';
+    text-align: center;
 }
