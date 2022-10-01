@@ -100,10 +100,11 @@ footer{
         border: 1.3px solid black;
         font-weight: normal;
         padding: 5px;
+        font-size: 3.1vw;
     }
     .na1 ul {
         margin-left: 1vw;
-
+    
     }
 
 };
