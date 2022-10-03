@@ -1,110 +1,134 @@
-.na1{
-    display: flex;
-    align-items: center;
+body {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    background-color: #f2f4f3;
 }
-.na1 ul{
-    display: flex;
-    align-items: center;
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 li{
     list-style: none;
-    margin-right: 50px;
     font-weight: bold;
+}
+.nav1{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 1.5rem;
+}
+.nav1 ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    grid-column-gap: 2rem;
+}
+.nav1 ul li{
+    background-color: #c5bacb;
+    border-radius: 7%;
+    padding: 8px 15px;
 }
 #logo{
     font-family:'Trebuchet MS';
     background-color: black;
     color: white;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 38px;
     width: min-content;
 }
-.na2 ol{
+.nav2 ol{
     display: flex;
-    margin-left: -2.3rem;
+    margin-left: -2.4rem;
+    margin-bottom: 1.5rem;
 }
-.na2 ol li{
+.nav2 ol li{
     list-style: none;
-    margin: 10px 30px 10px 0px;
-    margin-right: 40;
+    margin-right: 40px;
 }
-h1{
-    font-family: Verdana, Tahoma;
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1.5rem;
 }
-#PA{
-    font-family: Verdana, Tahoma;
-    width: 80%;
-}
-a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-}
-a:hover {
-    text-decoration: underline;
-  }
-section{
-    display: inline-flex;
-    margin-right: 395px;
-    justify-content: space-between;
-}
-img{
-    width:175px;
-    height:250px;
-    padding: 7px;
-}
-section div{
-    border: 1.5px solid black;
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-div p, div h4{
-    font-family: Tahoma;
-    margin-left: 7px;
-}
-footer{
-    margin-top: 1.5rem;
+#content1 div,#content2 div,#content3 div,#content4 div{
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
+}
+#content1,#content2,#content3,#content4{
+    border-radius: 3px;
+    background-color: #c7d7d6;
+}
+img{
+    width: 16vw;
+    height: calc( 15vw * 1.4);
+    border-radius: 2%;
+    margin: 15px;
+}
+h4, section p{
+    margin-left: 7%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: #d7cec7;
     font-family:'Trebuchet MS';
     text-align: center;
 }
-@media screen and (max-width: 500px) {
-    .na1{
-        display: block;
-        
-    }
+#articleContent{
+    font-family: sans-serif;
+}
+h2{
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media only screen and (max-width: 842px) {
     #logo{
-        margin-left: 40%;
+        padding: 10px 30px;
+        font-size: 25px;
+        width: min-content;
+        margin-bottom: 0.4rem;
     }
-    #PA{
-        width: 100%;
-    }
-    section{
-        flex-wrap: wrap;
+    .container{
+        grid-template-columns: auto auto;
+        grid-row-gap: 1.5rem;
     }
     img{
-        width: 70vw;
-        height: calc(70vw * 1.4);
+        width: 32vw;
+        height: calc( 30vw * 1.4);
     }
-    section div{
-        margin-bottom: 10px;
-        margin-left: 8vw;
+    h4, section p{
+        margin-left: -2%;
+        text-align: center;
     }
-    li{
-        font-weight: normal;
+    .nav1{
+        grid-template-columns: auto;
+        justify-items: center;
     }
-    .na1 ul li{
-        margin: 0;
-        border: 1.3px solid black;
-        font-weight: normal;
-        padding: 5px;
-        font-size: 3.1vw;
+    .nav1 ul{
+        margin-left: -2.4rem;
+        grid-column-gap: 0rem;
     }
-    .na1 ul {
-        margin-left: 1vw;
-    
+    .nav1 ul li{
+        display: flex;
+        border: 1px solid black;
+        padding: 8px;
+        font-size: 2.5vw;
+        border-radius: 0%;
     }
 
-};
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        grid-template-columns: auto;
+    }
+    img{
+        width: 50vw;
+        height: calc( 50vw * 1.4);
+    }
+}

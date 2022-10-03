@@ -20,9 +20,10 @@
    * Remove the margin in all browsers.
    */
   
-  body {
-    margin: 1rem;
-  }
+   body {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    }
   
   /**
    * Render the `main` element consistently in IE.
@@ -38,8 +39,7 @@
    */
   
   h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    font-size: 1.5em;
   }
   
   /* Grouping content
