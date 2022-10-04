@@ -132,3 +132,8 @@ h2{
         height: calc( 50vw * 1.4);
     }
 }
+@media print {
+    .nav1 ul{
+        display: none;
+    }
+}
