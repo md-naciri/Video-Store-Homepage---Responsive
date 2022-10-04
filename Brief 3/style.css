@@ -38,6 +38,7 @@ li{
     color: white;
     padding: 10px 20px;
     font-size: 38px;
+    width: min-content;
 }
 .nav2 ol{
     display: flex;
